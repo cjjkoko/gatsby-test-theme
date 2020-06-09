@@ -1,6 +1,8 @@
 import React from "react"
 import { create } from "dva-core"
 import models from "../src/Models"
+import checkoutModels from "gatsby-theme-checkout/src/Models"
+import plansModels from "gatsby-theme-plans/src/Models"
 import { createLogger } from "redux-logger"
 import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/es/storage'
@@ -8,7 +10,7 @@ import autoMergeLevel2 from 'redux-persist/es/stateReconciler/autoMergeLevel2'
 export default function dva() {
   const options = {
     initialState: {},
-    models: models,
+    models: [...models,...checkoutModels,...plansModels],
     onReducer (reducer) {
       const persistConfig = {
         key: 'root',
