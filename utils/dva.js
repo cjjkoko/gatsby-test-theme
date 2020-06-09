@@ -17,7 +17,7 @@ export default function dva() {
         storage,
         stateReconciler: autoMergeLevel2,
         blacklist: [''],// navigation will not be persisted
-        whitelist: ['Magento','FormContent']// only navigation will be persisted
+        whitelist: ['Magento']// only navigation will be persisted
       }
       return persistReducer(persistConfig, reducer)
 
