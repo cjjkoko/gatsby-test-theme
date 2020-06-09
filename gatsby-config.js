@@ -13,7 +13,7 @@ module.exports = {
       resolve: `gatsby-theme-checkout`, options: {}
     },
     {
-      resolve: `gatsby-theme-plans`, options: {
+      resolve: `gatsby-theme-marketing`, options: {
       }
     },
     {

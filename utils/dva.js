@@ -2,7 +2,7 @@ import React from "react"
 import { create } from "dva-core"
 import models from "../src/Models"
 import checkoutModels from "gatsby-theme-checkout/src/Models"
-import plansModels from "gatsby-theme-plans/src/Models"
+import plansModels from "gatsby-theme-marketing/src/Models"
 import { createLogger } from "redux-logger"
 import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/es/storage'
@@ -17,7 +17,7 @@ export default function dva() {
         storage,
         stateReconciler: autoMergeLevel2,
         blacklist: [''],// navigation will not be persisted
-        whitelist: ['Magento']// only navigation will be persisted
+        whitelist: ['Magento','FormContent']// only navigation will be persisted
       }
       return persistReducer(persistConfig, reducer)
 
