@@ -28,7 +28,7 @@
     "gatsby-source-contentful": "^2.3.11",
     "gatsby-source-filesystem": "^2.3.3",
     "gatsby-source-graphql": "^2.5.2",
-    "gatsby-theme-checkout": "0.0.4",
+    "gatsby-theme-checkout": "0.0.5",
     "gatsby-theme-marketing": "0.0.1",
     "gatsby-transformer-sharp": "^2.5.2",
     "graphql-request": "^2.0.0",
