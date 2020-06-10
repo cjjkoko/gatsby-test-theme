@@ -1,6 +1,6 @@
 import React from 'react';
 import "./src/styles/global.css"
-import Layout from './src/components/marketing/layout-marketing'
+import Layout from './src/components/layout'
 import wrapWithProvider from "./utils/wrapWithProvider"
 /**
  * Implement Gatsby's Browser APIs in this file.
