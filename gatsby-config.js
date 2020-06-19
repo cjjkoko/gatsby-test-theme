@@ -10,10 +10,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-theme-checkout`, options: {}
-    },
-    {
-      resolve: `gatsby-theme-marketing`, options: {
+      resolve: `gatsby-theme-checkout`, options: {
+        isTheme:true,
+        models:[]
       }
     },
     {
