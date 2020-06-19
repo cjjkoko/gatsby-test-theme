@@ -7,7 +7,7 @@
 // You can delete this file if you're not using it
 import React from "react"
 import Layout from './src/components/layout'
-import wrapWithProvider from "./utils/wrapWithProvider"
+import {wrapRoot} from "./utils/wrapWithProvider"
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
@@ -16,7 +16,7 @@ import wrapWithProvider from "./utils/wrapWithProvider"
 
 // Wraps every page in a component
 
-export const wrapRootElement = wrapWithProvider
+export const wrapRootElement = wrapRoot
 
 
 export const wrapPageElement = ({ element, props }) => {
