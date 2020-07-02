@@ -16,6 +16,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-theme-marketing`, options: {
+        isTheme:true,
+        models:[]
+      }
+    },
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `1q72o6qjws1u`,
