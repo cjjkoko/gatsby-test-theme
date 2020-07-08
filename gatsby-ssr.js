@@ -6,23 +6,21 @@
 
 // You can delete this file if you're not using it
 import React from "react"
-import Layout from './src/components/layout'
-import {wrapRoot} from "./utils/wrapWithProvider"
+import Layout from './src/components/marketing/layout-marketing'
+import {wrapRootProvider} from "./utils/wrapWithProvider"
+
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
-
+export const wrapRootElement = wrapRootProvider
 // Wraps every page in a component
-
-export const wrapRootElement = wrapRoot
-
-
 export const wrapPageElement = ({ element, props }) => {
   if(props.path.match(/^\/app/)){
     return <Layout {...props}>{element}</Layout>
   }
+
 }
 export const onPreRenderHTML = (
   { pathname, replaceHeadComponents, getHeadComponents, setBodyAttributes },
@@ -30,9 +28,6 @@ export const onPreRenderHTML = (
 ) => {
   console.log(" onPreRenderHTML pathname", pathname)
   const head =  getHeadComponents()
-  head.push(<script src="/test1.js"/>)
-  head.push(<script src="/test2.js"/>)
-  head.push(<script src="/test3.js"/>)
   replaceHeadComponents(head)
 
 }

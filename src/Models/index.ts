@@ -1,2 +1,2 @@
-const models = [];
+ const models = [];
 export default models;
