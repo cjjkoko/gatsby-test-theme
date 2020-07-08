@@ -1,9 +1,14 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "wom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "server": "gatsby server"
+  },
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.10.0",
     "@contentful/rich-text-react-renderer": "^13.4.0",
@@ -24,24 +29,15 @@
     "gatsby-plugin-postcss": "^2.3.1",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-sass": "^2.3.2",
-    "gatsby-plugin-sharp": "^2.6.10",
     "gatsby-source-contentful": "^2.3.11",
     "gatsby-source-filesystem": "^2.3.3",
     "gatsby-source-graphql": "^2.5.2",
-    "gatsby-theme-checkout": "0.0.7",
-    "gatsby-theme-marketing": "0.0.1",
+    "gatsby-theme-wom-browse": "^0.0.3",
     "gatsby-transformer-sharp": "^2.5.2",
     "graphql-request": "^2.0.0",
     "graphql-tag": "^2.10.3",
     "isomorphic-fetch": "^2.2.1",
     "node-sass": "^4.14.1",
-    "postcss-extend": "^1.0.5",
-    "postcss-mixins": "^6.2.3",
-    "postcss-nested": "^4.2.1",
-    "postcss-nested-vars": "^1.0.0",
-    "postcss-preset-env": "^6.7.0",
-    "postcss-sass": "^0.4.4",
-    "postcss-simple-vars": "^5.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -64,33 +60,10 @@
     "@typescript-eslint/parser": "^2.23.0",
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
-    "postcss-define-function": "^0.1.2",
-    "postcss-loader": "^3.0.0",
-    "postcss-nested-import": "^0.1.0",
     "prettier": "2.0.5",
     "react-redux": "^7.2.0",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
     "tslint-react": "^3.6.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

@@ -20,18 +20,7 @@ const Layout = ({ children }) => {
                       maxWidth:1920
                       quality:100
                   ) {
-                      src
-                      aspectRatio
-                      base64
-                      originalImg
-                      originalName
-                      presentationHeight
-                      presentationWidth
-                      sizes
-                      srcSet
-                      srcSetWebp
-                      srcWebp
-                      tracedSVG
+                      ...GatsbyImageSharpFluid
                   }
               }
           }
@@ -41,18 +30,7 @@ const Layout = ({ children }) => {
                       maxWidth:1920
                       quality:100
                   ) {
-                      src
-                      aspectRatio
-                      base64
-                      originalImg
-                      originalName
-                      presentationHeight
-                      presentationWidth
-                      sizes
-                      srcSet
-                      srcSetWebp
-                      srcWebp
-                      tracedSVG
+                      ...GatsbyImageSharpFluid
                   }
               }
           }

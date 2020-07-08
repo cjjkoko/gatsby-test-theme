@@ -1,6 +1,6 @@
 import React from 'react';
 import "./src/styles/global.css"
-import Layout from './src/components/layout'
+import Layout from './src/components/marketing/layout-marketing'
 import wrapWithProvider from "./utils/wrapWithProvider"
 /**
  * Implement Gatsby's Browser APIs in this file.
@@ -26,4 +26,5 @@ export const wrapPageElement = ({ element, props }) => {
   if(props.path.match(/^\/app/)){
     return <Layout {...props}>{element}</Layout>
   }
+
 }
